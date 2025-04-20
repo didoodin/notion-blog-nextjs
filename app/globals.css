@@ -82,3 +82,8 @@
     @apply bg-[var(--background)] text-[var(--foreground)];
   }
 }
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-4;
+  width: 100%;
+}
