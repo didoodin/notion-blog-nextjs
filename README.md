@@ -1,9 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # notion-blog-nextjs
 =======
 >>>>>>> 8e2e46c (충돌 해결)
+=======
+# notion-blog-nextjs
+=======
+>>>>>>> 8c157eb9b616b8085218ea0e34c063dfe1678fc8
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -41,9 +46,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # notion-blog-nextjs
 >>>>>>> 6f44e3d (Initial commit)
 =======
 >>>>>>> 08455ca (Initial commit from Create Next App)
 >>>>>>> 8e2e46c (충돌 해결)
+=======
+>>>>>>> 08455ca (Initial commit from Create Next App)
+>>>>>>> 8c157eb9b616b8085218ea0e34c063dfe1678fc8
