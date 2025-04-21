@@ -1,35 +1,16 @@
-<<<<<<< HEAD
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Youtube, Github, BookOpen, Instagram, Megaphone, HandshakeIcon } from 'lucide-react';
+import { Youtube, Github, BookOpen, Instagram } from 'lucide-react';
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 const mockTags = [
-  {
-    name: '전체',
-    count: 20,
-  },
-  {
-    name: 'HTML',
-    count: 10,
-  },
-  {
-    name: 'CSS',
-    count: 5,
-  },
-  {
-    name: 'JavaScript',
-    count: 3,
-  },
-  {
-    name: 'React',
-    count: 2,
-  },
-  {
-    name: 'Next.js',
-    count: 1,
-  },
+  { name: '전체', count: 20 },
+  { name: 'HTML', count: 10 },
+  { name: 'CSS', count: 5 },
+  { name: 'JavaScript', count: 3 },
+  { name: 'React', count: 3 },
+  { name: 'Next.js', count: 3 },
 ];
 
 const socialLinks = [
@@ -51,42 +32,9 @@ const socialLinks = [
   },
 ];
 
-const contactItems = [
-  {
-    icon: Megaphone,
-    title: '광고 및 제휴',
-    description: '브랜드 홍보, 컨텐츠 제작, 협업 제안',
-    mailto: {
-      email: 'bruce.lean17@gmail.com',
-      subject: '[광고/제휴] 제안',
-      body: '브랜드/제품명:\n제안 내용:\n기간:\n예산:',
-    },
-  },
-  {
-    icon: BookOpen,
-    title: '강의 문의',
-    description: '기술 강의, 워크샵, 세미나 진행',
-    mailto: {
-      email: 'bruce.lean17@gmail.com',
-      subject: '[강의] 문의',
-      body: '강의 주제:\n예상 인원:\n희망 일정:\n문의 내용:',
-    },
-  },
-  {
-    icon: HandshakeIcon,
-    title: '기타 문의',
-    description: '채용, 인터뷰, 기타 협업 제안',
-    mailto: {
-      email: 'bruce.lean17@gmail.com',
-      subject: '[기타] 문의',
-      body: '문의 종류:\n문의 내용:',
-    },
-  },
-];
-
 export default function Home() {
   return (
-    <div className="container py-8">
+    <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-[200px_1fr_220px] gap-6">
         {/* 좌측 사이드바 */}
         <aside>
@@ -117,45 +65,6 @@ export default function Home() {
             {/* 블로그 카드 반복 */}
             {[1, 2, 3].map((i) => (
               <Link href={`/blog/${i}`} key={i}>
-=======
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-
-export default function Home() {
-  return (
-    // min-h-screen으로 전체 높이 보장, grid로 3개 영역 분할
-    <div className="flex min-h-screen flex-col">
-      {/* Header 영역 */}
-      <header className="sticky top-0 z-50 border-b">
-        <div className="container mx-auto flex h-14 items-center px-4">
-          <a href="#" className="text-xl font-semibold">
-            <span className="font-bold">짐코딩 블로그</span>
-          </a>
-          <nav className="ml-auto flex items-center gap-4">
-            <a href="#" className="hover:text-primary font-medium">
-              홈
-            </a>
-            <a href="#" className="hover:text-primary font-medium">
-              블로그
-            </a>
-            <a href="#" className="hover:text-primary font-medium">
-              소개
-            </a>
-          </nav>
-        </div>
-      </header>
-
-      {/* Main 영역 */}
-      <main className="flex-1">
-        <div className="container mx-auto px-4 py-8">
-          <div className="space-y-8">
-            {/* 섹션 제목 */}
-            <h2 className="text-3xl font-bold tracking-tight">블로그 목록</h2>
-
-            {/* 블로그 카드 그리드 */}
-            <div className="space-y-4">
-              {/* 블로그 카드 반복 */}
-              {[1, 2, 3].map((i) => (
->>>>>>> 8c157eb9b616b8085218ea0e34c063dfe1678fc8
                 <Card key={i}>
                   <CardHeader>
                     <CardTitle>블로그 제목 {i}</CardTitle>
@@ -165,13 +74,12 @@ export default function Home() {
                     </CardDescription>
                   </CardHeader>
                 </Card>
-<<<<<<< HEAD
               </Link>
             ))}
           </div>
         </div>
         {/* 우측 사이드바 */}
-        <aside className="flex flex-col gap-6">
+        <aside>
           <Card>
             <CardContent className="pt-6">
               <div className="space-y-4">
@@ -210,54 +118,12 @@ export default function Home() {
                   ))}
                 </div>
 
-                <p className="bg-primary/10 rounded p-2 text-center text-sm">코딩 교육</p>
-              </div>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>문의하기</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
-                {contactItems.map((item, index) => (
-                  <a
-                    key={index}
-                    href={`mailto:${item.mailto.email}?subject=${encodeURIComponent(
-                      item.mailto.subject
-                    )}&body=${encodeURIComponent(item.mailto.body)}`}
-                    className="group bg-primary/5 hover:bg-muted flex items-start gap-4 rounded-lg p-3 transition-colors"
-                  >
-                    <div className="bg-primary/20 text-primary flex shrink-0 items-center justify-center rounded-md p-1.5">
-                      <item.icon className="h-4 w-4" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-medium">{item.title}</h3>
-                      <p className="text-muted-foreground text-xs">{item.description}</p>
-                    </div>
-                  </a>
-                ))}
+                <p className="bg-primary/10 rounded p-2 text-center text-sm">프론트엔드 공부</p>
               </div>
             </CardContent>
           </Card>
         </aside>
       </div>
-=======
-              ))}
-            </div>
-          </div>
-        </div>
-      </main>
-
-      {/* Footer 영역 */}
-      <footer className="border-t">
-        <div className="container mx-auto flex h-14 items-center justify-center">
-          <p className="text-muted-foreground text-sm">
-            Built with Next.js, Tailwind CSS and shadcn/ui
-          </p>
-        </div>
-      </footer>
->>>>>>> 8c157eb9b616b8085218ea0e34c063dfe1678fc8
     </div>
   );
 }

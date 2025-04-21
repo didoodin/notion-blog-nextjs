@@ -1,14 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "target": "es5",
-=======
-    "target": "ES2017",
->>>>>>> 8e2e46c (충돌 해결)
-=======
-    "target": "es5",
->>>>>>> 8c157eb9b616b8085218ea0e34c063dfe1678fc8
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -27,15 +19,7 @@
       }
     ],
     "paths": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "@/*": ["./*"]
-=======
-      "@/*": ["./src/*"]
->>>>>>> 8e2e46c (충돌 해결)
-=======
-      "@/*": ["./*"]
->>>>>>> 8c157eb9b616b8085218ea0e34c063dfe1678fc8
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
